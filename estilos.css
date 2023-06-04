@@ -1,0 +1,21 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #161815;
+}
+
+.section-padding {
+    padding: 70px;
+}
+
+.carousel-item{
+    height: 80vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 200px;
+    z-index: 2;
+}

@@ -1,23 +1,237 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/estilos.css">
+
 </head>
+
 <body>
-    <h1>TheStore</h1>
-    <ul>
-        <li><a href="productos.html">Products</a></li>
-        <li><a href="car.html">Car</a></li>
-        <li><a href="car.html">Login</a></li>
-        <li><a href="new_product.html">New products</a></li>
-        <img src="./Imagenes/ow69dltx.png" alt="Imagen de una bicicleta">
-        <p><strong>Bicicleta 4X4</strong> </p>
-        <p>$ 26.000</p>
-        <P><button>Add Car</button></P>
-        <img src="./Imagenes/OIP.jpg" alt="Imagen de un vehiculo Audi">
-    </ul>
+    <!--Menu de navegación responsivo-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+
+            <a href="#" class="navbar-brand"> <span class="text-primary">THE STORE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contactos</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--carrusel de navegación-->
+    <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="/Imagenes/tienda3.jpg" class="d-block w-100" alt=" ">
+                <div class="carousel-caption">
+                    <h5>LINEA RUTA</h5>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit esse nemo delectus recusandae quasi, sed
+                        aperiam repellendus inventore, labore dolor distinctio exercitationem
+                        natus consectetur. Eligendi odio doloribus sequi laboriosam officiis.
+                    </P>
+                    <a href="#" class="btn btn-primary mt-3">Más información</a>
+                </div>
+
+
+            </div>
+
+            <div class="carousel-item active">
+                <img src="/Imagenes/tienda4.jpg" class="d-block w-100" alt=" ">
+                <div class="carousel-caption">
+                    <h5>LINEA MTB</h5>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit esse nemo delectus recusandae quasi, sed
+                        aperiam repellendus inventore, labore dolor distinctio exercitationem
+                        natus consectetur. Eligendi odio doloribus sequi laboriosam officiis.
+                    </P>
+                    <a href="#" class="btn btn-primary mt-3">Más información</a>
+                </div>
+
+
+            </div>
+
+            <div class="carousel-item active">
+                <img src="/Imagenes/tienda-bicicletas-en-murcia-scaled.webp" class="d-block w-100" alt=" ">
+                <div class="carousel-caption">
+                    <h5>URBAN </h5>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit esse nemo delectus recusandae quasi, sed
+                        aperiam repellendus inventore, labore dolor distinctio exercitationem
+                        natus consectetur. Eligendi odio doloribus sequi laboriosam officiis.
+                    </P>
+                    <a href="#" class="btn btn-primary mt-3">Más información</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+
+        </button>
+    </div>
+
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="/Imagenes/tienda (1).jpg" class="img-fluid" alt="">
+
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <h2>Bicitaller</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maiores veritatis quas
+                            laborum qui architecto molestiae, quibusdam accusamus id perspiciatis, corporis at magni
+                            exercitationem maxime soluta aspernatur repellat quo molestias.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <h2>Nuestros servicios</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta animi minus nulla
+                            perspiciatis necessitatibus mollitia optio dolorum! Laborum sequi hic unde error eligendi
+                            quaerat mollitia, nesciunt laudantium dicta non nam.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-laptop"></i>
+                            <h3 class="card-title">TALLER</h3>
+                            <p class="lead">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laudantium iusto, atque
+                                delectus aspernatur accusamus. Quae aspernatur libero adipisci voluptate voluptatum non
+                                doloribus. Provident praesentium soluta, perferendis mollitia vitae quis?
+                            </p>
+                            <button class="btn bg-primary text-white">Mas información</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-wifi"></i>
+                            <h3 class="card-title">ROPA</h3>
+                            <p class="lead">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laudantium iusto, atque
+                                delectus aspernatur accusamus. Quae aspernatur libero adipisci voluptate voluptatum non
+                                doloribus. Provident praesentium soluta, perferendis mollitia vitae quis?
+                            </p>
+                            <button class="btn bg-primary text-white">Mas información</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-tv"></i>
+                            <h3 class="card-title">CLUB</h3>
+                            <p class="lead">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laudantium iusto, atque
+                                delectus aspernatur accusamus. Quae aspernatur libero adipisci voluptate voluptatum non
+                                doloribus. Provident praesentium soluta, perferendis mollitia vitae quis?
+                            </p>
+                            <button class="btn bg-primary text-white">Mas información</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <h2>MARCAS</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
