@@ -19,3 +19,14 @@ body{
     bottom: 200px;
     z-index: 2;
 }
+
+.letra
+{
+    color: black;
+
+}
+
+p{
+    font: 400;
+}
+
